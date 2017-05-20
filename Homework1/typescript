@@ -1,0 +1,287 @@
+Script started on Tue 13 Sep 2016 07:13:45 PM EDT
+[01;32madempus@adempus-X202E[01;34m ~/Documents/School/2016-2017/Fall/CISC3130/Homework1 $$[00m cat Contact.cpp
+/* Jeff Morin
+ * CISC 3130
+ * Homework 1
+ * Fall 2016
+ *
+ * */
+
+#include <ostream>
+#include "Contact.h"
+
+/* constructor */
+Contact::Contact(string fname, string lname, long number,
+                 string street, string city, string state) :
+        first_name(fname), last_name(lname), number(number),
+        street(street), city(city), state(state)
+{ }
+
+/* getters */
+string Contact::get_first_name() {
+    return first_name;
+}
+
+string Contact::get_last_name() {
+    return last_name;
+}
+
+string Contact::get_full_name() {
+    return first_name+" "+last_name;
+}
+
+long Contact::get_number() {
+    return number;
+}
+
+string Contact::get_st_address() {
+    return street;
+}
+
+string Contact::get_city() {
+    return city;
+}
+
+string Contact::get_state() {
+    return state;
+}
+
+void Contact::set_address(string street, string city, string state) {
+    this->street = street;
+    this->city = city;
+    this->state = state;
+}
+
+void Contact::update(string fname, string lname, long num,
+                     string street, string city, string state)
+{
+    first_name = fname;
+    last_name = lname;
+    number = num;
+    set_address(street, city, state);
+}
+
+string Contact::number_format() {
+    string number_str = to_string(number);
+    if((unsigned) number_str.length() >= 10) {
+        number_str.insert(0, "(");
+        number_str.insert(4, " ");
+        number_str.insert(4, ")");
+        number_str.insert(9, "-");
+    }
+    return number_str;
+}
+
+/* overloaded operators */
+bool operator!=(const Contact& c1, const Contact& c2) {
+    return (c1.last_name != c2.last_name);
+}
+
+bool operator==(const Contact& c1, const Contact& c2) {
+    return (c1.first_name == c2.first_name && c1.last_name == c2.last_name);
+}
+
+bool operator<(const Contact& c1, const Contact& c2) {
+    return (c1.last_name != c2.last_name ?
+            c1.last_name < c2.last_name : c1.first_name < c2.first_name);
+}
+
+bool operator>(const Contact& c1, const Contact& c2) {
+    return (c1.last_name != c2.last_name ?
+            c1.last_name > c2.last_name : c1.first_name > c2.first_name);
+}
+
+ostream& operator<<(ostream& output, Contact& contact) {
+    return output << contact.first_name << " " << contact.last_name << "\tPhone Number: " <<
+           contact.number_format() << "\n" << contact.street << "\n" <<
+           contact.city << ", " << contact.state << endl;
+}[01;32madempus@adempus-X202E[01;34m ~/Documents/School/2016-2017/Fall/CISC3130/Homework1 $$[00m cat cont[K[K[K[KContact.h
+/* Jeff Morin
+ * CISC 3130
+ * Homework 1
+ * Fall 2016
+ *
+ * */
+
+
+#ifndef CONTACT_CONTACT_H
+#define CONTACT_CONTACT_H
+#include <string>
+
+using namespace std;
+
+class Contact
+{
+public:
+    Contact(string fname = "unknown", string lname = "unknown", long number = 0,
+            string street = "unknown", string city = "unknown", string state = "unknown");
+
+    string get_first_name();
+    string get_last_name();
+    string get_full_name();
+    long get_number();
+    string get_st_address();
+    string get_city();
+    string get_state();
+    void update(string, string, long, string, string, string);
+    void set_address(string, string, string);
+
+    // overloaded operators
+    friend bool operator==(const Contact& c1, const Contact& c2);
+    friend bool operator!=(const Contact& c1, const Contact& c2);
+    friend bool operator<(const Contact& c1, const Contact& c2);
+    friend bool operator>(const Contact&, const Contact&);
+    friend ostream& operator<<(ostream&, Contact&);
+
+private:
+    string first_name;
+    string last_name;
+    long number;
+    string number_format();
+    string street;
+    string city;
+    string state;
+};
+
+#endif //CONTACT_CONTACT_H[01;32madempus@adempus-X202E[01;34m ~/Documents/School/2016-2017/Fall/CISC3130/Homework1 $$[00m clear
+[H[2J[01;32madempus@adempus-X202E[01;34m ~/Documents/School/2016-2017/Fall/CISC3130/Homework1 $$[00m cat y[K[K typescript
+Script started on Tue 13 Sep 2016 07:13:45 PM EDT
+[01;32madempus@adempus-X202E[01;34m ~/Documents/School/2016-2017/Fall/CISC3130/Homework1 $$[00m cat Contact.cpp
+/* Jeff Morin
+ * CISC 3130
+ * Homework 1
+ * Fall 2016
+ *
+ * */
+
+#include <ostream>
+#include "Contact.h"
+
+/* constructor */
+Contact::Contact(string fname, string lname, long number,
+                 string street, string city, string state) :
+        first_name(fname), last_name(lname), number(number),
+        street(street), city(city), state(state)
+{ }
+
+/* getters */
+string Contact::get_first_name() {
+    return first_name;
+}
+
+string Contact::get_last_name() {
+    return last_name;
+}
+
+string Contact::get_full_name() {
+    return first_name+" "+last_name;
+}
+
+long Contact::get_number() {
+    return number;
+}
+
+string Contact::get_st_address() {
+    return street;
+}
+
+string Contact::get_city() {
+    return city;
+}
+
+string Contact::get_state() {
+    return state;
+}
+
+void Contact::set_address(string street, string city, string state) {
+    this->street = street;
+    this->city = city;
+    this->state = state;
+}
+
+void Contact::update(string fname, string lname, long num,
+                     string street, string city, string state)
+{
+    first_name = fname;
+    last_name = lname;
+    number = num;
+    set_address(street, city, state);
+}
+
+string Contact::number_format() {
+    string number_str = to_string(number);
+    if((unsigned) number_str.length() >= 10) {
+        number_str.insert(0, "(");
+        number_str.insert(4, " ");
+        number_str.insert(4, ")");
+        number_str.insert(9, "-");
+    }
+    return number_str;
+}
+
+/* overloaded operators */
+bool operator!=(const Contact& c1, const Contact& c2) {
+    return (c1.last_name != c2.last_name);
+}
+
+bool operator==(const Contact& c1, const Contact& c2) {
+    return (c1.first_name == c2.first_name && c1.last_name == c2.last_name);
+}
+
+bool operator<(const Contact& c1, const Contact& c2) {
+    return (c1.last_name != c2.last_name ?
+            c1.last_name < c2.last_name : c1.first_name < c2.first_name);
+}
+
+bool operator>(const Contact& c1, const Contact& c2) {
+    return (c1.last_name != c2.last_name ?
+            c1.last_name > c2.last_name : c1.first_name > c2.first_name);
+}
+
+ostream& operator<<(ostream& output, Contact& contact) {
+    return output << contact.first_name << " " << contact.last_name << "\tPhone Number: " <<
+           contact.number_format() << "\n" << contact.street << "\n" <<
+           contact.city << ", " << contact.state << endl;
+}[01;32madempus@adempus-X202E[01;34m ~/Documents/School/2016-2017/Fall/CISC3130/Homework1 $$[00m cat cont[K[K[K[KContact.h
+/* Jeff Morin
+ * CISC 3130
+ * Homework 1
+ * Fall 2016
+ *
+ * */
+
+
+#ifndef CONTACT_CONTACT_H
+#define CONTACT_CONTACT_H
+#include <string>
+
+using namespace std;
+
+class Contact
+{
+public:
+    Contact(string fname = "unknown", string lname = "unknown", long number = 0,
+            string street = "unknown", string city = "unknown", string state = "unknown");
+
+    string get_first_name();
+    string get_last_name();
+    string get_full_name();
+    long get_number();
+    string get_st_address();
+    string get_city();
+    string get_state();
+    void update(string, string, long, string, string, string);
+    void set_address(string, string, string);
+
+    // overloaded operators
+    friend bool operator==(const Contact& c1, const Contact& c2);
+    friend bool operator!=(const Contact& c1, const Contact& c2);
+    friend bool operator<(const Contact& c1, const Contact& c2);
+    friend bool operator>(const Contact&, const Contact&);
+    friend ostream& operator<<(ostream&, Contact&);
+
+private:
+    string first_name;
+    string last_name;
+    long number;
+    string number_f
