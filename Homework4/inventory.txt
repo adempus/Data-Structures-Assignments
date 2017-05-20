@@ -1,0 +1,31 @@
+hammer,10.25
+grill,1000
+spatula,15.95
+nails,2.95
+paint,25.50
+screws,2.95
+wrench,20.29
+screwdriver,4.95
+gloves,30
+measuring tape,5.00
+saw,35.99
+sander,12.00
+pliers,8.99
+jumper wires,2.95
+tweezers,3.95
+flux,9.99
+breadboard,4.95
+liquid nails,5.00
+nuts,2.25
+bolts,2.25
+thermal paste,3.89
+drill,40.95
+drill bit,1.95
+soldering iron,85.99
+solder,5.99
+glue gun,10.99
+glue sticks,1.25
+solder wick,3.00
+multimeter,17.50
+heat shrink,5.00
+plywood,22.00

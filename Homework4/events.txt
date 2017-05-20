@@ -1,0 +1,66 @@
+S,3,grill,1,hammer,3,wrench,5
+S,1,wrench,1
+S,6,hammer,1,grill,1,wrench,3,gloves,4,paint,10,spatula,2
+S,1,paint,4
+P
+S,2,paint,3,plywood,1
+P
+S,3,jumper wires,4,breadboard,3,drill,1
+S,1,multimeter,2
+S,5,screws,10,screwdriver,1,nails,15,paint,2,plywood,5
+P
+S,3,solder wick,5,liquid nails,8,heat shrink,10
+S,8,gloves,4,measuring tape,2,spatula,1,saw,2,nuts,10,bolts,10,wrench,2,paint,1
+P
+S,5,hammer,1,paint,5,gloves,2,sander,4,grill,1
+P
+S,4,liquid nails,2,wrench,1,soldering iron,1,solder,4
+S,3,soldering iron,2,pliers,2,liquid nails,4
+S,4,glue gun,1,hammer,2,gloves,4,tweezers,2
+P
+S,5,soldering iron,2,pliers,2,liquid nails,4,multimeter,1,glue gun,2
+S,4,glue gun,1,solder wick,2,gloves,4,hammer,1
+S,7,breadboard,4,tweezers,2,jumper wires,10,drill,1,solder wick,3,heat shrink,5,flux,2
+S,10,liquid nails,4,nuts,5,bolts,5,paint,2,spatula,1,wrench,3,saw,2,measuring tape,1,pliers,3,sander,2
+S,3,heat shrink,15,glue gun,1,glue sticks,12
+S,1,soldering iron,2
+P
+S,5,grill,1,measuring tape,2,pliers,3,liquid nails,2,gloves,5
+S,2,glue sticks,8,multimeter,2
+S,6,saw,2,tweezers,2,solder,4,heat shrink,5,paint,2
+S,4,hammer,2,jumper wires,20,breadboard,5,plywood,6
+P
+S,5,flux,4,nuts,10,bolts,10,solder,2,wrench,1
+S,1,screwdriver,2
+P
+S,8,paint,3,gloves,4,drill,1,drill bit,7,liquid nails,5,glue gun,2,glue sticks,3,plywood,1
+S,3,measuring tape,1,breadboard,5,heat shrink,7
+S,9,gloves,4,flux,7,nuts,15,bolts,6,saw,2,drill bit,6,sander,2,multimeter,2,jumper wires,5
+P
+S,4,thermal paste,2,solder,5,breadboard,6,jumper wires,10
+P
+S,7,hammer,2,nails,50,nuts,30,bolts,30,saw,2,wrench,3,drill bit,5
+S,4,grill,1,multimeter,3,jumper wires,10,gloves,2
+S,2,solder wick,4,soldering iron,1
+S,6,tweezers,2,flux,3,thermal paste,1,glue gun,1,glue sticks,7,heat shrink,10
+S,10,hammer,2,nails,50,grill,2,plywood,4,nuts,35,bolts,35,screws,35,screwdriver,2,gloves,2,wrench,1
+S,15,plywood,10,hammer,2,nails,8,paint,4,drill,2,drill bit,5,saw,2,sander,5,spatula,1,measuring tape,1,pliers,2,breadboard,2,jumper wires,4,multimeter,1,heat shrink,40
+S,1,grill,1
+P
+S,5,breadboard,6,flux,3,solder,6,plywood,1,glue sticks,2
+S,3,liquid nails,3,sander,1,screwdriver,2
+S,5,jumper wires,7,gloves,1,tweezers,2,screwdriver,1,screws,50
+S,3,saw,1,nails,10,hammer,2
+S,8,screwdriver,2,screws,5,soldering iron,1,pliers,1,thermal paste,2,plywood,3,liquid nails,2,solder wick,3
+P
+S,4,drill,1,grill,1,saw,1,plywood,2
+S,1,breadboard,3,jumper wires,1,multimeter,1
+S,2,glue gun,1,glue sticks,2,spatula,1,hammer,1,plywood,1
+S,5,multimeter,2,wrench,1,nuts,14,bolts,14,thermal paste,3
+P
+S,9,hammer,2,nails,5,plywood,6,measuring tape,1,jumper wires,2,tweezers,4,glue gun,2,glue sticks,3,sander,1
+S,3,tweezers,2,jumper wires,15,breadboard,7
+S,5,flux,3,solder wick,2,thermal paste,4,pliers,1,screws,24
+S,1,liquid nails,5
+S,7,measuring tape,2,gloves,1,hammer,1,multimeter,2,plywood,6,saw,1,spatula,2
+P
