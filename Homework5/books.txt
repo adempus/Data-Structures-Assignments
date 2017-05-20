@@ -1,0 +1,6 @@
+Data_Structures_with_C++_Using_STL 2 William_Topp William_Ford Prentice_Hall 2002
+Introduction_to_Algorithms 4 Cormen Leiserson Rivest Stein MIT_Press 2009
+Analysis_of_Algorithms 1 McConnell Jones_and_Bartlett 2008
+Chemistry 6 Brown LeMay Bursten Murphy Woodward Stolzfus Prentice_Hall 2012
+Computer_Graphics 1 McConnell Jones_and_Bartlett 2006
+Principles_of_Anatomy_&_Physiology 2 Tortora Derrickson Wiley_and_sons 2012
