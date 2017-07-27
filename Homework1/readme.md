@@ -1,6 +1,6 @@
-![alt text](http://i.imgur.com/ymNFMFs.gif)
 
-## Homework 1
+
+# Homework 1
 
 In this assignment, you will write a class that implements a contact book
 entry. For example, my iPhone (and pretty much any smartphone) has a contacts
@@ -51,7 +51,7 @@ You must also write a main program called useContact.cpp that tests each of
 these functions and shows me that you understand how to use the Contact
 class in a program.
 
-# What to submit:
+## What to submit:
 1. your Contact.h file.
 2. your Contact.cpp file
 3. your useContact.cpp file. 
