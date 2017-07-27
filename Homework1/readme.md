@@ -39,7 +39,9 @@ names are the same, use the first name to break ties.
 * A stream insertion (<<) operator that prints out a contact in the following form:
 
 ` <First name> <last name> Phone number: <phone number> `
+
 ` <street address> `
+
 ` <city> , <state> `
 
 
