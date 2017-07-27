@@ -1,4 +1,4 @@
-
+![alt text](http://i.imgur.com/ymNFMFs.gif)
 
 # Homework 1
 
