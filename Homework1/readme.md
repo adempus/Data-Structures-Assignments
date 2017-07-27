@@ -47,10 +47,12 @@ names are the same, use the first name to break ties.
 
 For example my contact info would print out:
 
-`Ari Mermelstein Phone number: (718) 111-1111`
-`2900 Bedford Avenue`
-`Brooklyn, NY`
-`
+` Ari Mermelstein Phone number: (718) 111-1111`
+
+` 2900 Bedford Avenue`
+
+` Brooklyn, NY`
+
 
 You must also write a main program called useContact.cpp that tests each of
 these functions and shows me that you understand how to use the Contact
