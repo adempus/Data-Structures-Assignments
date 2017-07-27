@@ -1,4 +1,4 @@
-## Homework 2
+# Homework 2
 
 In this homework assignment, you will implement a Contact List class. This assignment
 (and some subsequent ones) will use the Contact class from homework 1.
@@ -11,7 +11,7 @@ Constructors:
 
 (i.e. prototype ContactList(Contact* contacts, int numContacts); )
 
-# Operations:
+## Operations:
 
 	* A function that searches for a particular contact by last name, and returns a reference
 		to the Contact. If there is no such Contact, a sentinel value should be returned. (like
@@ -30,7 +30,7 @@ Constructors:
 		Contact to the list if it is not there already.
 	* A function that returns the size of the ContactList.
 
-# Operators:
+## Operators:
 	* An overloaded [ ] operator that returns a Contact by reference at a certain index in the
 		ContactList. You should throw an exception if the index is out of bounds.
 	* An overloaded << operator that prints out a ContactList. You should print out each
